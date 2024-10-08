@@ -1,0 +1,72 @@
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(32, 29, 29);
+    transition: 2s all linear;
+    margin: 0 0 0 5%;
+
+    p {
+        font-size: 1.5rem;
+        color: #f3f3f3;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+#loading {
+    margin: 0 0 0 13%;
+    p {
+        font-size: 1rem;
+    }
+}
+}
+
+.custom-loader {
+    width: 10%;
+    height: 5%;
+    display: grid;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .custom-loader {
+        width: 20%;
+        height: 10%;
+    }
+}
+
+.custom-loader::before,
+.custom-loader::after {
+    content: "";
+    grid-area: 1/1;
+    --c: radial-gradient(farthest-side, #f3f3f3 92%, #0000);
+    background:
+        var(--c) 50% 0,
+        var(--c) 50% 100%,
+        var(--c) 100% 50%,
+        var(--c) 0 50%;
+    background-size: 1rem 1rem;
+    background-repeat: no-repeat;
+    animation: spinner 1s infinite;
+}
+
+.custom-loader::before {
+    margin: 4px;
+    filter: hue-rotate(45deg);
+    background-size: 8px 8px;
+    animation-timing-function: linear
+}
+
+@keyframes spinner {
+    100% {
+        transform: rotate(.5turn)
+    }
+}
+
+.hidden {
+    display: none;
+}

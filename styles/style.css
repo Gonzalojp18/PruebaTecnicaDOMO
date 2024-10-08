@@ -1,0 +1,374 @@
+/* -------------------start main styles-------------------- */
+
+body {
+    font-family: 'helvetica';
+}
+
+#home-section {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+.section-container-navbar {
+    justify-content: space-between;
+    font-weight: bold;
+
+    img {
+        padding: 1rem 0 0 2rem;
+        width: 6%;
+        height: 1%;
+    }
+}
+
+.section-navBar {
+    justify-content: space-between;
+    border-top: 2px solid #000;
+    margin: 1% 5% 0 0;
+    min-width: 40%;
+
+    p {
+        width: 35%;
+        padding: 1rem 0 0 2.5rem;
+    }
+}
+
+.nav-bar {
+    padding: 1rem 0 0 0;
+
+    ul {
+        list-style: none;
+
+        li {
+            color: #000;
+            font-size: 1.2em;
+            padding: 0 0 .5em 0;
+        }
+    }
+}
+
+/*
+mobile */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    #home-section {
+        min-height: 90vh;
+    }
+
+    .section-container-navbar {
+        img {
+            padding: .5rem 0 0 .5rem;
+            width: 15%;
+        }
+    }
+
+    .section-navBar {
+        margin: 10% 5% 0 0;
+
+        p {
+            width: 55%;
+            font-size: 1em;
+            padding: 1rem 0 0 1.5rem;
+        }
+    }
+
+    .nav-bar {
+        padding: 1rem 0 0 0;
+
+        ul {
+            list-style: none;
+
+            li {
+                color: #000;
+                font-size: 1.2em;
+                padding: 0 0 1.5em 0;
+            }
+        }
+    }
+
+
+}
+/*
+table */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .section-container-navbar {
+        img {
+            padding: 2rem 0 0 2rem;
+            width: 10%;
+        }
+    }
+
+    .section-navBar {
+        margin: 2% 5% 0 0;
+        min-width: 40%;
+
+        p {
+            width: 50%;
+        }
+    }
+
+    .nav-bar {
+        padding: 2rem 3% 0 0;
+
+        ul {
+            list-style: none;
+
+            li {
+                font-size: 1.5em;
+                padding: .5em 0;
+            }
+        }
+    }
+}
+
+/* pantallas grandes */
+@media screen and (min-width: 1380px) and (max-width: 1950px) {
+    .section-container-navbar {
+        img {
+            width: 5%;
+        }
+    }
+
+    .section-navBar {
+        p {
+            width: 30%;
+            padding: 2rem 0 0 2.5rem;
+            font-size: 1.5rem;
+        }
+    }
+
+    .nav-bar {
+        padding: 2rem 2% 0 0;
+
+        ul {
+            li {
+                font-size: 1.5rem;
+                padding: .3em 0;
+            }
+        }
+    }
+}
+
+/* --------------------start main styles-------------------- */
+
+.main-section {
+    height: 70vh;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+}
+
+.high-end {
+    padding: 0 0 0 2%;
+
+    h1 {
+        font-size: 8em;
+        line-height: 100px;
+        letter-spacing: 10px;
+    }
+}
+
+.navy {
+    position: absolute;
+    left: 75%;
+    top: 70%;
+
+    img {
+        width: 70%;
+    }
+}
+
+.digital-studio {
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 0 1%;
+
+    img {
+        width: 4%;
+    }
+
+    h2 {
+        font-size: 8em;
+        margin: 0 0 0 12%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .main-section {
+        flex-direction: column;
+        margin-bottom: 30%;
+    }
+
+    .high-end {
+        h1 {
+            font-size: 3.5em;
+            writing-mode: vertical-rl;
+            box-orient: vertical;
+            direction: ltr;
+            transform: rotate(180deg);
+            unicode-bidi: bidi-override;
+            height: 60%;
+            letter-spacing: 8px;
+            margin: 0 0 10% 0;
+        }
+    }
+
+    .navy {
+        position: absolute;
+        left: 90%;
+        top: 80%;
+
+        img {
+            width: 10vw;
+        }
+    }
+
+    .digital-studio {
+        width: 100%;
+        img{
+            width: 8%;
+        }
+        h2 {
+            font-size: 3em;
+            width: 80%;
+        }
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .main-section {
+        min-height: 60vh;
+        bottom: 2%;
+    }
+
+    .high-end {
+        h1 {
+            font-size: 6em;
+        }
+    }
+
+    .navy {
+        position: absolute;
+        left: 75%;
+        top: 50%;
+    }
+
+    .digital-studio {
+        img {
+            width: 15%;
+        }
+
+        h2 {
+            font-size: 6em;
+            width: 85%;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1380px) and (max-width: 1950px) {
+    .main-section {
+        min-height: 70vh;
+        bottom: 5%;
+    }
+
+    .high-end {
+        h1 {
+            font-size: 10em;
+            letter-spacing: 10px;
+        }
+    }
+
+    .navy {
+        position: absolute;
+        left: 75%;
+        top: 75%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .digital-studio {
+        padding: 0 0 0 1%;
+
+        img {
+            width: 3%;
+        }
+
+        h2 {
+            font-size: 10em;
+            width: 85%;
+            letter-spacing: 10px;
+        }
+    }
+}
+
+
+/* --------------------start footer styles-------------------- */
+
+
+footer {
+    color: #f3f3f3;
+}
+
+.about-me {
+    font-size: .7em;
+}
+
+.box-footer {
+    width: 40%;
+}
+
+.details {
+    position: absolute;
+    left: 73%;
+    bottom: 5%;
+    border-radius: 1rem;
+    z-index: 2;
+    clip-path: circle(100% at 50% 20%);
+    transition: all 1s ease-in-out;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 25%;
+}
+
+.details.active {
+    opacity: 1;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .about-me {
+        font-size: .9em;
+    }
+
+    .details {
+        left: 5%;
+        bottom: 10%;
+        clip-path: circle(100% at 50% 30%);
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .about-me {
+        font-size: .9em;
+    }
+
+    .box-footer {
+        width: 100%;
+    }
+
+    .details {
+        left: 5%;
+        bottom: 8%;
+        clip-path: circle(100% at 50% 30%);
+        width: 90%;
+    }
+}
